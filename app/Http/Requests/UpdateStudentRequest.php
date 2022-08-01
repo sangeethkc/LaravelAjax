@@ -26,8 +26,8 @@ class UpdateStudentRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'branch' => 'required|string|max:255',
-            'mobile' => 'required|integer|unique:students',
-            'email' => 'required|string|email|max:255|unique:students',
+            'mobile' => 'required|integer',
+            'email' => 'required|string|email|max:255',
             'address' => 'required|string|max:255',
         ];
     }
